@@ -154,7 +154,7 @@ footer {
 
     /* Titre principal */
     .title {
-        font-size: 5rem; /* Réduit la taille du titre sur mobile */
+        font-size: 3rem; /* Réduit la taille du titre sur mobile */
     }
 
     /* Description */
@@ -181,7 +181,7 @@ footer {
 @media only screen and (max-width: 480px) {
     /* Titre */
     .title {
-        font-size: 5rem; /* Réduit encore plus la taille du titre */
+        font-size: 3rem; /* Réduit encore plus la taille du titre */
     }
 
     /* Description */
