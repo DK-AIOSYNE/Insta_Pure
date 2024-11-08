@@ -14,7 +14,6 @@ body {
     justify-content: flex-start; /* Assure que le contenu commence en haut */
     height: 100vh; /* Assure que l'ensemble de la fenêtre est utilisé */
     padding-top: 20px; 
-    overflow: hidden; /* Empêche le défilement excessif */
 }
 
 /* Conteneur central */
