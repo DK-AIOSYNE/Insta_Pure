@@ -140,3 +140,56 @@ footer {
 .back-btn:hover {
     background: #555; /* Légère éclaircie au survol */
 }
+/* Responsive Design pour les téléphones */
+@media only screen and (max-width: 768px) {
+    /* Conteneur principal */
+    .container {
+        padding: 20px;
+        margin: 0 10px; /* Réduit les marges pour éviter l'écrasement */
+    }
+
+    /* Titre principal */
+    .title {
+        font-size: 3rem; /* Réduit la taille du titre sur mobile */
+    }
+
+    /* Description */
+    .description {
+        font-size: 1rem; /* Réduit la taille de la description */
+        padding: 20px; /* Réduit l'espace de padding */
+    }
+
+    /* Conteneur des boutons */
+    .buttons-container {
+        flex-direction: column; /* Place les boutons les uns en dessous des autres */
+        align-items: center; /* Centre les boutons */
+    }
+
+    .info-btn, .download-btn, .back-btn {
+        width: 100%; /* Les boutons prennent toute la largeur de l'écran */
+        padding: 12px 0; /* Ajuste le padding pour mieux s'adapter */
+        font-size: 1.1rem; /* Ajuste la taille de la police */
+        margin: 10px 0; /* Ajoute un petit espace entre les boutons */
+    }
+}
+
+/* Pour les très petits écrans (comme les smartphones très compacts) */
+@media only screen and (max-width: 480px) {
+    /* Titre */
+    .title {
+        font-size: 2.5rem; /* Réduit encore plus la taille du titre */
+    }
+
+    /* Description */
+    .description {
+        font-size: 0.9rem; /* Réduit encore la taille du texte */
+        padding: 15px; /* Ajuste le padding */
+    }
+
+    /* Boutons */
+    .info-btn, .download-btn, .back-btn {
+        width: 100%; /* S'assure que les boutons prennent toute la largeur */
+        padding: 10px 0; /* Ajuste le padding */
+    }
+}
+
