@@ -1,0 +1,147 @@
+/* Styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Permet au footer de rester en bas */
+    justify-content: flex-start; /* Assure que le contenu commence en haut */
+    height: 100vh; /* Assure que l'ensemble de la fenêtre est utilisé */
+    padding-top: 20px; 
+    overflow: hidden; /* Empêche le défilement excessif */
+}
+
+/* Conteneur central */
+.container {
+    text-align: left;
+    max-width: 900px;
+    padding: 20px;
+    margin: 0 auto; /* Centrage horizontal */
+    flex-grow: 1; /* Permet à ce conteneur de prendre l'espace restant */
+    overflow-y: auto; /* Autorise le défilement si le contenu est trop long */
+}
+
+/* Titre avec dégradé animé */
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 7rem;
+    background: linear-gradient(90deg, #fdc468, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-size: 300%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 6s infinite linear;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: left;
+    padding: 20px;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    background-color: transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 0 20px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    z-index: 1; /* Assure que le texte reste au-dessus du flou */
+}
+
+.description::after {
+    content: '';
+    position: absolute;
+    top: -1px; /* Décale le flou vers le haut */
+    left: -1px; /* Décale le flou vers la gauche */
+    right: -1px; /* Décale le flou vers la droite */
+    bottom: -1px; /* Décale le flou vers le bas */
+    background: linear-gradient(90deg, #fdc468, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-size: 300%;
+    z-index: -1;
+    filter: blur(10px); /* Réduit l'intensité du flou */
+    opacity: 0.3; /* Réduit la visibilité du flou */
+}
+
+/* Conteneur des boutons */
+.buttons-container {
+    display: flex;
+    justify-content: space-between; /* Espacement entre les boutons */
+    margin-top: 20px; /* Ajoute un espace au-dessus des boutons */
+}
+
+/* Bouton "En savoir plus" */
+.info-btn {
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(90deg, #2d5c78,#6778d6,#654784,#3a156d);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+/* Effet au survol du bouton "En savoir plus" */
+.info-btn:hover {
+    background: linear-gradient(90deg, #fa7e1e, #fdc468);
+}
+
+/* Bouton de téléchargement (reste inchangé) */
+.download-btn {
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(90deg, #2d5c78,#6778d6,#654784,#3a156d);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+/* Effet au survol du bouton de téléchargement */
+.download-btn:hover {
+    background: linear-gradient(90deg, #fdc468, #fdc468);
+}
+
+/* Footer fixe */
+footer {
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+    z-index: 10;
+}
+
+/* Animation du dégradé */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 300%;
+    }
+}

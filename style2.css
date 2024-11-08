@@ -1,0 +1,142 @@
+/* Styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000; /* Fond clair */
+    color: #000000; /* Texte sombre pour un bon contraste */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-top: 40px;
+  
+}
+
+/* Conteneur principal */
+.container {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    flex-grow: 1;
+    
+}
+
+/* Titre principal */
+.title {
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    background: linear-gradient(90deg, #fdc468, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-size: 300%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 6s infinite linear;
+    margin-bottom: 30px;
+}
+
+/* Description */
+.description {
+    font-size: 1.1rem;
+    line-height: 1.8; /* Espacement plus grand entre les lignes */
+    text-align: center;
+    color: #000000;
+    background: rgba(253, 228, 184, 0.8); /* Fond plus clair */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+/* Conteneur des boutons */
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+/* Bouton "En savoir plus" */
+.info-btn {
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(90deg, #2d5c78, #6778d6, #654784, #3a156d);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.info-btn:hover {
+    background: linear-gradient(90deg, #fa7e1e, #fdc468);
+}
+
+/* Bouton de téléchargement */
+.download-btn {
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(90deg, #2d5c78, #6778d6, #654784, #3a156d);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+    display: inline-block;
+}
+
+.download-btn:hover {
+    background: linear-gradient(90deg, #fdc468, #fdc468);
+}
+
+/* Footer fixe */
+footer {
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+    z-index: 10;
+}
+
+/* Animation du dégradé */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 300%;
+    }
+}
+/* Bouton "Retour à l'index" */
+.back-btn {
+    font-size: 1.1rem;
+    color: #000000;
+    background: #c5c5c5; /* Fond sombre */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.back-btn:hover {
+    background: #555; /* Légère éclaircie au survol */
+}
