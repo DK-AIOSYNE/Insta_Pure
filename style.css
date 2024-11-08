@@ -194,7 +194,7 @@ footer {
     .info-btn, .download-btn, .back-btn {
         width: 100%; /* S'assure que les boutons prennent toute la largeur */
         padding: 10px 0; /* Ajuste le padding */
-        margin-bottom:40px
+        margin-bottom:20px
     }
 }
 
